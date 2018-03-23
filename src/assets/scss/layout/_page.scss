@@ -7,6 +7,10 @@
 	background-color: $border-color;
 	width: 100%;
 	margin: 40px 0 35px 0;
+
+	&.m20 {
+		margin: 20px 0;
+		}
 }
 
 .divider-sm {

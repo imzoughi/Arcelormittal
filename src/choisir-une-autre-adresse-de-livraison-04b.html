@@ -2,7 +2,7 @@
 <!--[if lt IE 10]><html class="ie9 lt-ie8" lang=""><![endif]-->
 <!--[if gt IE 10]><!--> <html lang="fr"> <!--<![endif]-->
 <head>
-  <!-- @@include includes/head.html {"title": "Mon panier : HP panier vide"} -->
+  <!-- @@include includes/head.html {"title": "Mon panier : Choisir une autre adresse de livraison"} -->
 </head>
 <body>
 
@@ -46,16 +46,30 @@
     <div class="order-pending--block order-pending--truck-filling">
       <ul class="list-truck">
         <li>
-          <div class="block-truck truck">
+          <div class="block-truck truck" id="">
             <img class="block-truck--img" src="assets/img/truck.svg" alt="Camion non rempli">
                 <span class="block-truck--weight-bar weight-bar">
-                  <span class="progress" style="width: 0%;"></span>
+                  <span class="progress" style="width: 80%;"></span>
                   <span class="progress-min" >min 20t</span>
                 </span>
           </div>
         </li>
+        <li>
+          <div class="block-truck truck truck-filled" id="">
+            <img class="block-truck--img" src="assets/img/truck.svg" alt="Camion rempli">
+                <span class="block-truck--weight-bar weight-bar">
+                  <span class="progress" style="width: 100%;"></span>
+                  <span class="progress-min" >2</span>
+                </span>
+          </div>
+        </li>
       </ul>
-      <a class="button primary btn-start" href="#">Débuter mes achats</a>
+      <p><u>Stock vérifié le 21/03/17 à 16h15</u></p>
+      <p>3 camion</p>
+      <p>Poids total = 58 tonnes</p>
+      <p class="warning">Poids manquant  = 2 tonnes</p>
+      <p>Poids avant l'ajout d'un autre camion = 10 tonnes</p>
+      <a class="button primary" href="#">Voir mon panier</a>
     </div>
     <div class="order-pending--block order-pending--address-delivery">
       <div class="order-pending--title">
@@ -140,8 +154,62 @@
           <button type="button" class="button primary icon-only"><i class="icon-search"></i></button>
         </div>
       </div>
+      <p class="search-address--result">Vous avez 6 résultats pour "AMD Solutions"</p>
     </div>
   </form>
+
+  <ul class="list-address clearfix">
+    <li>
+      <div class="block-address">
+        <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+        <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+        <div class="block-address--info">
+          <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+        </div>
+        <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+      </div>
+    </li>
+    <li>
+      <div class="block-address">
+        <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+        <h3 class="block-address--title">GEBRUDER LOTTER KG</h3>
+        <div class="block-address--info">
+          <p>Raiffeisenstrasse <br> BLECHLAGER LUDWIGSBURG <br>  71636 LUDWIGSBURG</p>
+        </div>
+        <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+      </div>
+    </li>
+    <li>
+      <div class="block-address">
+        <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+        <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
+        <div class="block-address--info">
+          <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
+        </div>
+        <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+      </div>
+    </li>
+    <li>
+      <div class="block-address">
+        <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+        <h3 class="block-address--title">GEBRUDER LOTTER KG</h3>
+        <div class="block-address--info">
+          <p>Raiffeisenstrasse <br> BLECHLAGER LUDWIGSBURG <br>  71636 LUDWIGSBURG</p>
+        </div>
+        <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+      </div>
+    </li>
+    <li>
+      <div class="block-address">
+        <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+        <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
+        <div class="block-address--info">
+          <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
+        </div>
+        <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+      </div>
+    </li>
+  </ul>
 
   <hr class="divider">
 
@@ -269,6 +337,75 @@
 <footer class="footer" role="contentinfo">
   <!-- @@include includes/footer.html -->
 </footer><!--//END footer -->
+
+<div class="popin-block large popin-adress">
+  <button class="button popin-close"><i class="icon-close"></i></button>
+  <div class="popin-content">
+    <h2 class="account-title mb30">Choisir une autre adresse de livraison</h2>
+
+    <hr class="divider m20">
+
+    <form action="">
+      <div class="form-content search-address single clearfix">
+        <div class="control-group clearfix">
+          <label class="control-label" for="">Rechercher une autre adresse</label>
+          <div class="control-input">
+            <input type="text" placeholder="Ville, nom du client..." id="">
+          </div>
+          <div class="control-submit">
+            <button type="button" class="button primary icon-only"><i class="icon-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <hr class="divider m20">
+
+    <ul class="list-address clearfix">
+      <li>
+        <div class="block-address">
+          <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+          <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+          <div class="block-address--info">
+            <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+          </div>
+          <button type="button" class="button primary">Choisir cette adresse</button>
+        </div>
+      </li>
+      <li>
+        <div class="block-address">
+          <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+          <h3 class="block-address--title">GEBRUDER LOTTER KG</h3>
+          <div class="block-address--info">
+            <p>Raiffeisenstrasse <br> BLECHLAGER LUDWIGSBURG <br>  71636 LUDWIGSBURG</p>
+          </div>
+          <button type="button" class="button primary">Choisir cette adresse</button>
+        </div>
+      </li>
+      <li>
+        <div class="block-address">
+          <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+          <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
+          <div class="block-address--info">
+            <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
+          </div>
+          <button type="button" class="button primary">Choisir cette adresse</button>
+        </div>
+      </li>
+    </ul>
+
+    <div class="textcenter list-actions">
+      <a href="#">+ Afficher toutes mes adresses</a>
+    </div>
+  </div>
+  <div class="popin-footer popin-actions">
+    <div class="textcenter">
+      <button type="button" class="button secondary">Annuler</button>
+    </div>
+  </div>
+</div>
+
+<div class="overlay"></div>
 
 <!-- @@include includes/scripts.html -->
 
