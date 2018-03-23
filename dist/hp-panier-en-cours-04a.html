@@ -5,7 +5,7 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8"> 
-  <title>Mon panier : HP sans panier</title> 
+  <title>Mon panier : HP panier en cours</title> 
 	<meta name="viewport" content="width=1070">
 	
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" />
@@ -292,7 +292,82 @@
 <!--.page-account-->
 <div class="main page-account container" role="main">
 
-  <h2 class="account-title">Mes adresses de livraison <span>(80)</span></h2>
+  <h2 class="account-title">Ma commande en cours</h2>
+
+  <div class="order-pending clearfix">
+    <p class="order-pending--alert">Il faut un minimum de 20 tonnes pour qu'un camion puisse partir.</p>
+    <div class="order-pending--block order-pending--address-shipping">
+      <div class="order-pending--title">
+        <i class="icon-location"></i>
+        <p>Adresse d'expédition</p>
+      </div>
+      <div class="block-address">
+        <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+        <div class="block-address--info">
+          <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+        </div>
+      </div>
+    </div>
+    <div class="order-pending--block order-pending--truck-filling">
+      <ul class="list-truck">
+        <li>
+          <div class="block-truck truck" id="">
+            <img class="block-truck--img" src="assets/img/truck.svg" alt="Camion non rempli">
+                <span class="block-truck--weight-bar weight-bar">
+                  <span class="progress" style="width: 80%;"></span>
+                  <span class="progress-min" >min 20t</span>
+                </span>
+          </div>
+        </li>
+        <li>
+          <div class="block-truck truck truck-filled" id="">
+            <img class="block-truck--img" src="assets/img/truck.svg" alt="Camion rempli">
+                <span class="block-truck--weight-bar weight-bar">
+                  <span class="progress" style="width: 100%;"></span>
+                  <span class="progress-min" >2</span>
+                </span>
+          </div>
+        </li>
+      </ul>
+      <p><u>Stock vérifié le 21/03/17 à 16h15</u></p>
+      <p>3 camion</p>
+      <p>Poids total = 58 tonnes</p>
+      <p class="warning">Poids manquant  = 2 tonnes</p>
+      <p>Poids avant l'ajout d'un autre camion = 10 tonnes</p>
+      <a class="button primary" href="#">Voir mon panier</a>
+    </div>
+    <div class="order-pending--block order-pending--address-delivery">
+      <div class="order-pending--title">
+        <i class="icon-location-stroke"></i>
+        <p>Adresse de livraison</p>
+      </div>
+      <div class="block-address">
+        <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+        <div class="block-address--info">
+          <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+        </div>
+        <div class="block-adress--edit">
+          <a href="#">Choisir une autre adresse</a>
+        </div>
+        <div class="divider-sm"></div>
+        <h3 class="block-address--title themed">Adresse de facturation</h3>
+        <div class="block-address--info">
+          <p>AMD SOLUTIONS FRANCE <br>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+        </div>
+        <div class="block-adress--edit">
+          <a href="#">Choisir une autre adresse</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <hr class="divider">
+
+  <h2 class="account-title">Mes adresses de livraison <span>(7)</span></h2>
 
   <ul class="list-address clearfix">
     <li>
@@ -344,8 +419,62 @@
           <button type="button" class="button primary icon-only"><i class="icon-search"></i></button>
         </div>
       </div>
+      <p class="search-address--result">Vous avez 6 résultats pour "AMD Solutions"</p>
     </div>
   </form>
+
+  <ul class="list-address clearfix">
+    <li>
+      <div class="block-address">
+        <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+        <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+        <div class="block-address--info">
+          <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+        </div>
+        <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+      </div>
+    </li>
+    <li>
+      <div class="block-address">
+        <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+        <h3 class="block-address--title">GEBRUDER LOTTER KG</h3>
+        <div class="block-address--info">
+          <p>Raiffeisenstrasse <br> BLECHLAGER LUDWIGSBURG <br>  71636 LUDWIGSBURG</p>
+        </div>
+        <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+      </div>
+    </li>
+    <li>
+      <div class="block-address">
+        <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+        <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
+        <div class="block-address--info">
+          <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
+        </div>
+        <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+      </div>
+    </li>
+    <li>
+      <div class="block-address">
+        <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+        <h3 class="block-address--title">GEBRUDER LOTTER KG</h3>
+        <div class="block-address--info">
+          <p>Raiffeisenstrasse <br> BLECHLAGER LUDWIGSBURG <br>  71636 LUDWIGSBURG</p>
+        </div>
+        <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+      </div>
+    </li>
+    <li>
+      <div class="block-address">
+        <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+        <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
+        <div class="block-address--info">
+          <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
+        </div>
+        <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+      </div>
+    </li>
+  </ul>
 
   <hr class="divider">
 
@@ -467,9 +596,6 @@
   <div class="textcenter">
     <a href="#">+ Afficher plus de commandes</a>
   </div>
-
-
-
 </div><!--//END main -->
 <!--/.page-account-->
 

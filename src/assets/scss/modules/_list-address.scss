@@ -7,9 +7,12 @@
 	li {
 		float: left;
 		width: 28%;
-		margin: 0 2.666% 50px 2.666%;
+		margin: 0 2.666% 35px 2.666%;
 	}
 	+ .list-actions {
 		margin-top: 0px;
 	}
+	+.divider {
+		margin-top: -35px;
+		}
 }

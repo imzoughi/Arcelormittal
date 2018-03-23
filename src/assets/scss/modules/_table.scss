@@ -1,116 +1,119 @@
 /*-----------------------------------------------------------------------------------------------------
     [table]
 -------------------------------------------------------------------------------------------------------*/
-.table {}
+.table { }
 
 .order-history {
-	margin-top: 50px;
-	margin-bottom: 30px;
-	width: 100%;
-	thead {
-		tr {
-			th {
-				color: #CCC;
-				font-size: 12px;
-				border: none;
-				border-bottom: 1px solid $border-color;
-				padding: 10px 20px;
-				&.first {
-					padding-left: 0;
-				}
-				&.col-total {
-					text-align: center;
-				}
-			}
-		}
-	}
-	tbody {
-		tr {
-			td {
-				border: none;
-				border-bottom: 1px solid $border-color;
-				padding: 25px 20px;
-			}
-		}
-	}
-	td {
-		border: none;
-		border-bottom: 1px solid $border-color;
-		padding: 25px 20px;
-		position: relative;
-		&:after {
-			content: "";
-			display: block;
-			position: absolute;
-			right: 0;
-			top: 50%;
-			margin-top: -20px;
-			height: 40px;
-			width: 1px;
-			background-color: $border-color;
-		}
-		&.first {
-			padding-left: 0;
-		}
-		&.col-total {
-			//text-align: center;
-			width: 25%;
-			.truck-filling {
-				float: left;
-				width: 48%;
-				text-align: center;
-				.truck {
-					display: block;
-					margin-top: 2px;
-					position: relative;
-					text-align: center;
-					margin: 0;
-					transform: scale(1);
-					width: auto;
-					max-height: none;
-					float: none;
-					span {
-						font-size: 12px;
-						font-weight: bold;
-						color: #FFF;
-						position: absolute;
-						top: 3px;
-						left: 0;
-						right: 5px;
-						text-align: center;
-					}
-					img {
-						display: inline-block;
-						width: 64px;
-					}
-				}
-				a {
-					font-size: 12px;
-					text-decoration: underline;
-				}
-			}
-			.total-info {
-				float: right;
-				width: 48%;
-			}
-		}
-		&.last {
-			padding-right: 0;
-			width: 20%;
-			.button {
-				font-size: 14px;
-				width: 100%;
-				[class*="icon-"] {
-					top: 54%;
-					font-size: 24px;
-				}
-			}
-			&:after {
-				display: none;
-			}
-		}
-	}
-}
+  margin-top    : 50px;
+  margin-bottom : 30px;
+  width         : 100%;
+  thead {
+    tr {
+      th {
+        color          : #CCC;
+        font-size      : 12px;
+        border         : none;
+        border-bottom  : 1px solid $border-color;
+        padding        : 10px 20px;
+        text-transform : none;
+        &.first {
+          padding-left : 0;
+          }
+        &.col-total {
+          text-align : center;
+          }
+        }
+      }
+    }
+  tbody {
+    tr {
+      td {
+        border        : none;
+        border-bottom : 1px solid $border-color;
+        padding       : 25px;
+        }
+      }
+    }
+  td {
+    border        : none;
+    border-bottom : 1px solid $border-color;
+    padding       : 25px;
+    position      : relative;
+    &:after {
+      content          : "";
+      display          : block;
+      position         : absolute;
+      right            : 0;
+      top              : 50%;
+      margin-top       : -20px;
+      height           : 40px;
+      width            : 1px;
+      background-color : $border-color;
+      }
+    &.first {
+      padding-left : 0;
+      }
+    &.col-total {
+      //text-align: center;
+      position : relative;
+      width    : 25%;
+      .truck-filling {
+        float      : left;
+        width      : 48%;
+        text-align : center;
+        .truck {
+          display    : block;
+          margin-top : 2px;
+          position   : relative;
+          text-align : center;
+          margin     : 0;
+          transform  : scale(1);
+          width      : auto;
+          max-height : none;
+          float      : none;
+          span {
+            font-size   : 12px;
+            font-weight : bold;
+            color       : #FFF;
+            position    : absolute;
+            top         : 3px;
+            left        : 0;
+            right       : 5px;
+            text-align  : center;
+            }
+          img {
+            display : inline-block;
+            width   : 64px;
+            }
+          }
+        a {
+          font-size       : 12px;
+          text-decoration : underline;
+          }
+        }
+      .total-info {
+        float : right;
+        width : 48%;
+        }
+      }
+    &.last {
+      padding-right  : 0;
+      width          : 20%;
+      vertical-align : middle;
+      .button {
+        font-size : 14px;
+        width     : 100%;
+        [class*="icon-"] {
+          top       : 54%;
+          font-size : 24px;
+          }
+        }
+      &:after {
+        display : none;
+        }
+      }
+    }
+  }
 
 
 

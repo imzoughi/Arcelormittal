@@ -74,7 +74,7 @@ gulp.task('js', function() {
 
 // Html extend : simple templating engine
 gulp.task('html', function() {
-  return gulp.src([source + './*.html'])
+  return gulp.src([source + '/*.html'])
   // Generates HTML includes
   .pipe(extender({
     annotations: false,
@@ -103,9 +103,9 @@ gulp.task('copy', function () {
         source + '/assets/svg/**/*',
         source + '/assets/js/app.js',
         source + '/assets/vendor/**/*',
-        source + './*.png',
-        source + './*.ico',
-        source + './*.css'
+        source + '/*.png',
+        source + '/*.ico',
+        source + '/*.css'
       ], {
         base: 'src'
     }).pipe(gulp.dest(prod));
@@ -115,7 +115,7 @@ gulp.task('copy', function () {
 
 // Tâche "glyphicons" = Créations de l'icon font
 gulp.task('glyphicons', function() {
- return gulp.src(source +'./assets/glyphicons/*')
+ return gulp.src(source +'/assets/glyphicons/*')
     .pipe(iconfontCss({
       fontName: 'icons', // nom de la fonte, doit être identique au nom du plugin iconfont
       targetPath: '../scss/components/_icons.scss', // emplacement de la css finale
@@ -147,7 +147,7 @@ gulp.task('generate-favicon', function(done) {
   realFavicon.generateFavicon({
     masterPicture: source + '/assets/img/favicon_master.png',
     dest: prod + '/assets/favicons/',
-    iconsPath: './assets/favicons/',
+    iconsPath: '/assets/favicons/',
     design: {
       ios: {
         pictureAspect: 'noChange',
@@ -205,7 +205,7 @@ gulp.task('generate-favicon', function(done) {
 // this task whenever you modify a page. You can keep this task
 // as is or refactor your existing HTML pipeline.
 gulp.task('inject-favicon-markups', function() {
-  return gulp.src([ source + './index.html' ])
+  return gulp.src([ source + '/index.html' ])
     .pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
     .pipe(gulp.dest(source));
 });
@@ -231,7 +231,7 @@ gulp.task('watch', function () {
   gulp.watch([source + '/assets/img/*.{png,jpg,jpeg,gif,svg}', source + '/assets/img/**/*.{png,jpg,jpeg,gif,svg}'], ['img']);
   gulp.watch([source + '/assets/glyphicons/*.{svg}'], ['glyphicons']);
   gulp.watch([source + '/assets/svg/**/*.{svg}'], ['copy']);
-  gulp.watch([source + './*.html', source + './includes/**/*.html'], ['html']);
+  gulp.watch([source + '/*.html', source + '/includes/**/*.html'], ['html']);
   livereload.listen();
 });
 
