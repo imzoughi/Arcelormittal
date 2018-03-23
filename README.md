@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# Rayures framework
 
-You can use the [editor on GitHub](https://github.com/imzoughi/Arcelormittal/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A simple html/css framework powered by Sass, Bower & Gulp for my projects.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- - -
 
-### Markdown
+## Tools
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- [Gulp + plugins](http://gulpjs.com/) *[Streaming build system]*
+- [Bower](http://bower.io/) *[Package management]*
 
-```markdown
-Syntax highlighted code block
+## Requirement
 
-# Header 1
-## Header 2
-### Header 3
+You need to have `node`, `npm`, `gulp` and `bower` installed locally to run this project.
 
-- Bulleted
-- List
+## Getting Started
 
-1. Numbered
-2. List
+Set up your project in your code directory
 
-**Bold** and _Italic_ and `Code` text
+    git clone https://github.com/MrRayures/rayures-framework.git your-project-folder
 
-[Link](url) and ![Image](src)
-```
+Initialization
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+    npm install
+    bower install
 
-### Jekyll Themes
+Compilation and watch on all files
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/imzoughi/Arcelormittal/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    gulp
 
-### Support or Contact
+Development task 
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    gulp build
+
+Production task 
+
+    gulp prod
+

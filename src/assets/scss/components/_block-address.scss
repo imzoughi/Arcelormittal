@@ -1,0 +1,55 @@
+/*-----------------------------------------------------------------------------------------------------
+    [block-address]
+-------------------------------------------------------------------------------------------------------*/
+.block-address {
+  background-color : #F0F0F0;
+  padding          : 15px 30px 32px;
+  .block-address--icon {
+    text-align    : center;
+    margin-bottom : 15px;
+    [class*="icon-"] {
+      color     : $primary;
+      font-size : 40px;
+      }
+    }
+  .block-address--title {
+    font-size     : 15px;
+    font-weight   : bold;
+    margin-right  : -35px;
+    margin-bottom : 5px;
+    }
+  .block-address--info {
+    font-size    : 15px;
+    min-height   : 90px;
+    margin-right : -35px;
+    line-height  : 22px;
+    }
+  .block-adress--edit {
+    margin-top : 5px;
+    a {
+      font-size       : 13px;
+      text-decoration : underline;
+      }
+    }
+  .button {
+    display      : block;
+    margin-right : 35px;
+    width        : 100%;
+    }
+
+  &.select {
+    padding-bottom : 45px;
+    position       : relative;
+    .custom-select {
+      position : absolute;
+      bottom   : 0;
+      left     : 0;
+      right    : 0;
+      }
+    .block-address--info {
+      min-height : 0;
+      }
+    }
+  }
+
+
