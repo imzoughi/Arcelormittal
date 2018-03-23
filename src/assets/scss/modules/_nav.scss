@@ -1,7 +1,18 @@
 /*-----------------------------------------------------------------------------------------------------
     [nav]
 -------------------------------------------------------------------------------------------------------*/
-.nav-content {}
+.nav-content { }
+
+.order-nav {
+  margin-bottom   : 25px;
+  display         : flex;
+  align-items: center;
+  justify-content : space-between;
+  .order-back-link {
+    font-size   : 16px;
+    line-height : 18px;
+    }
+  }
 
 
 
