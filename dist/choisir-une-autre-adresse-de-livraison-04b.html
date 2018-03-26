@@ -616,7 +616,7 @@
     <form action="">
       <div class="form-content search-address single clearfix">
         <div class="control-group clearfix">
-          <label class="control-label" for="">Rechercher une autre adresse</label>
+          <label class="control-label small" for="">Rechercher</label>
           <div class="control-input">
             <input type="text" placeholder="Ville, nom du client..." id="">
           </div>
@@ -629,7 +629,7 @@
 
     <hr class="divider m20">
 
-    <ul class="list-address clearfix">
+    <ul class="list-address justified clearfix">
       <li>
         <div class="block-address">
           <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
@@ -675,7 +675,31 @@
 
 <div class="overlay"></div>
 
+<script type="text/javascript" src="assets\vendor\jquery\dist\jquery.min.js"></script>
+<script type="text/javascript" src="assets\vendor\matchHeight\dist\jquery.matchHeight-min.js"></script>
 
+<script type="text/javascript">
+    $(function() {
+        $('.list-address > li > .block-address .block-address--title').matchHeight({
+            byRow: true,
+            property: 'min-height',
+            target: null,
+            remove: false
+        });
+        $('.list-address > li > .block-address .block-address--info').matchHeight({
+            byRow: true,
+            property: 'min-height',
+            target: null,
+            remove: false
+        });
+        $('.list-address > li > .block-address').matchHeight({
+            byRow: true,
+            property: 'min-height',
+            target: null,
+            remove: false
+        });
+    })(jQuery);
+</script>
 
 </body>
 </html>

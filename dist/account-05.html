@@ -636,7 +636,31 @@
     
     <div class="overlay"></div>
 
+<script type="text/javascript" src="assets\vendor\jquery\dist\jquery.min.js"></script>
+<script type="text/javascript" src="assets\vendor\matchHeight\dist\jquery.matchHeight-min.js"></script>
 
+<script type="text/javascript">
+    $(function() {
+        $('.list-address > li > .block-address .block-address--title').matchHeight({
+            byRow: true,
+            property: 'min-height',
+            target: null,
+            remove: false
+        });
+        $('.list-address > li > .block-address .block-address--info').matchHeight({
+            byRow: true,
+            property: 'min-height',
+            target: null,
+            remove: false
+        });
+        $('.list-address > li > .block-address').matchHeight({
+            byRow: true,
+            property: 'min-height',
+            target: null,
+            remove: false
+        });
+    })(jQuery);
+</script>
 
   </body>
 </html>
