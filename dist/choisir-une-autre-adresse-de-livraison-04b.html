@@ -606,8 +606,9 @@
 	</div>
 </footer><!--//END footer -->
 
-<div class="popin-block large popin-adress-delivery">
-  <button class="button popin-close"><i class="icon-close"></i></button>
+
+<div class="popin-block large popin-adress-delivery" id="popin-adress-delivery_id" style="display: block">
+  <button class="button popin-close" data-dismiss="popin-block"><i class="icon-close"></i></button>
   <div class="popin-content">
     <h2 class="account-title mb30">Choisir une autre adresse de livraison</h2>
 
@@ -668,38 +669,15 @@
   </div>
   <div class="popin-footer popin-actions">
     <div class="textcenter">
-      <button type="button" class="button secondary">Annuler</button>
+      <button type="button" class="button secondary" data-dismiss="popin-block">Annuler</button>
     </div>
   </div>
 </div>
-
 <div class="overlay"></div>
 
-<script type="text/javascript" src="assets\vendor\jquery\dist\jquery.min.js"></script>
-<script type="text/javascript" src="assets\vendor\matchHeight\dist\jquery.matchHeight-min.js"></script>
-
-<script type="text/javascript">
-    $(function() {
-        $('.list-address > li > .block-address .block-address--title').matchHeight({
-            byRow: true,
-            property: 'min-height',
-            target: null,
-            remove: false
-        });
-        $('.list-address > li > .block-address .block-address--info').matchHeight({
-            byRow: true,
-            property: 'min-height',
-            target: null,
-            remove: false
-        });
-        $('.list-address > li > .block-address').matchHeight({
-            byRow: true,
-            property: 'min-height',
-            target: null,
-            remove: false
-        });
-    })(jQuery);
-</script>
+<script type="text/javascript" src="assets/vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="assets/vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
 
 </body>
 </html>
