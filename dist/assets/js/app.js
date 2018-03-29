@@ -27,27 +27,46 @@ var blockAddressHeight = function () {
  \* ========================================== */
 var popinBlock = function () {
     var body = $('body');
-    var popins = $('.popin-block');
-    var overlay = '<div class="overlay"></div>';
+    var popins = $('.popin-block-overlay');
+    //var overlay = '<div class="overlay"></div>';
     var btnOpen = $('[data-toggle="popin-block"]');
     var btnClose = $('[data-dismiss="popin-block"]');
+
+    var heightCheck = function (target) {
+        var popinH = $(target).find('.popin-block').height();
+        if(popinH > $(window).height()) {
+            $(target).addClass('sticked');
+            console.log('sticked');
+        } else {
+            $(target).removeClass('sticked');
+            console.log('nosticked');
+        }
+    };
 
     $(btnOpen).on('click', function (e) {
         e.preventDefault();
 
         var target = $(this).attr('data-target');
         $(popins).hide();
-        $(body).addClass('noscroll').append(overlay);
+        $(body).addClass('noscroll');
         $(target).show();
         blockAddressHeight();
+
+        heightCheck(target);
+
+        $(window).resize(function () {
+            heightCheck(target);
+        });
+
     });
 
     $(btnClose).on('click', function (e) {
         e.preventDefault();
 
         $(popins).hide();
-        $(body).removeClass('noscroll').find('.overlay').remove();
+        $(body).removeClass('noscroll');
     });
+
 };
 
 $(function () {
