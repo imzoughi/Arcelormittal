@@ -74,6 +74,7 @@ var popinBlock = function () {
         if (!container.is(e.target) && container.has(e.target).length === 0)
         {
             $(popins).hide();
+            $(body).removeClass('noscroll');
         }
     });
 
