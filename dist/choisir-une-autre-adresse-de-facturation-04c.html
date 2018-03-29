@@ -18,8 +18,7 @@
 		<script src="assets/vendor/html5shiv/dist/html5shiv.min.js"></script>
 	<![endif]-->
 </head>
-<body>
-
+<body class="noscroll">
 
 <div class="branding-mobile hidden-md hidden-lg">
 	<div class="js-mobile-logo"><a href="/sscstorefront/fr/"><img title="Arcelor Mittal" alt="Arcelor Mittal" src="https://e-shopprocessedsteel.arcelormittal.com/sscstorefront/medias/logo.jpg?context=c3NjfGltYWdlc3w1NDUxfGltYWdlL2pwZWd8aW1hZ2VzL2gxZS9oMWMvODc5NjE4Mzg4NzkwMi5qcGd8NmE1MDIyOGVhMTNkM2EzY2RkMTE4OGUxMjc5ZjZhZjBlMWY4ZGE2ZWQ4MmIzODIyNGQyMmMxNGE0ZTY4NDQxOA"></a></div>
@@ -347,7 +346,7 @@
           <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
         </div>
         <div class="block-adress--edit">
-          <a href="#">Choisir une autre adresse</a>
+          <a href="#" data-toggle="popin-block" data-target="#popin-adress-delivery_id">Choisir une autre adresse</a>
         </div>
         <div class="divider-sm"></div>
         <h3 class="block-address--title themed">Adresse de facturation</h3>
@@ -355,7 +354,7 @@
           <p>AMD SOLUTIONS FRANCE <br>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
         </div>
         <div class="block-adress--edit">
-          <a href="#">Choisir une autre adresse</a>
+          <a href="#" data-toggle="popin-block" data-target="#popin-adress-billing_id">Choisir une autre adresse</a>
         </div>
       </div>
 
@@ -606,41 +605,107 @@
 	</div>
 </footer><!--//END footer -->
 
-<div class="popin-block large popin-adress-billing" id="popin-adress-billing_id" style="display: block">
-    <button class="button popin-close" data-dismiss="popin-block"><i class="icon-close"></i></button>
-    <div class="popin-content">
-        <h2 class="account-title mb30">Choisir une autre adresse de facturation</h2>
+<div class="popin-block large popin-adress-delivery" id="popin-adress-delivery_id">
+  <button class="button popin-close" data-dismiss="popin-block"><i class="icon-close"></i></button>
+  <div class="popin-content">
+    <h2 class="account-title mb30">Choisir une autre adresse de livraison</h2>
 
-        <hr class="divider m20">
+    <hr class="divider m20">
 
-        <ul class="list-address list-address center justified clearfix">
-            <li>
-                <div class="block-address">
-                    <div class="block-address--icon"><i class="icon-calculator"></i></div>
-                    <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
-                    <div class="block-address--info">
-                        <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
-                    </div>
-                    <button type="button" class="button primary">Choisir cette adresse</button>
-                </div>
-            </li>
-            <li>
-                <div class="block-address">
-                    <div class="block-address--icon"><i class="icon-calculator"></i></div>
-                    <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
-                    <div class="block-address--info">
-                        <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
-                    </div>
-                    <button type="button" class="button primary">Choisir cette adresse</button>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="popin-footer popin-actions">
-        <div class="textcenter">
-            <button type="button" class="button secondary" data-dismiss="popin-block">Annuler</button>
+    <form action="">
+      <div class="form-content search-address single clearfix">
+        <div class="control-group clearfix">
+          <label class="control-label small" for="">Rechercher</label>
+          <div class="control-input">
+            <input type="text" placeholder="Ville, nom du client..." id="">
+          </div>
+          <div class="control-submit">
+            <button type="button" class="button primary icon-only"><i class="icon-search"></i></button>
+          </div>
         </div>
+      </div>
+    </form>
+
+    <hr class="divider m20">
+
+    <ul class="list-address justified clearfix">
+      <li>
+        <div class="block-address">
+          <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+          <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+          <div class="block-address--info">
+            <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+          </div>
+          <button type="button" class="button primary">Choisir cette adresse</button>
+        </div>
+      </li>
+      <li>
+        <div class="block-address">
+          <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+          <h3 class="block-address--title">GEBRUDER LOTTER KG</h3>
+          <div class="block-address--info">
+            <p>Raiffeisenstrasse <br> BLECHLAGER LUDWIGSBURG <br>  71636 LUDWIGSBURG</p>
+          </div>
+          <button type="button" class="button primary">Choisir cette adresse</button>
+        </div>
+      </li>
+      <li>
+        <div class="block-address">
+          <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+          <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
+          <div class="block-address--info">
+            <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
+          </div>
+          <button type="button" class="button primary">Choisir cette adresse</button>
+        </div>
+      </li>
+    </ul>
+
+    <div class="textcenter list-actions">
+      <a href="#">+ Afficher toutes mes adresses</a>
     </div>
+  </div>
+  <div class="popin-footer popin-actions">
+    <div class="textcenter">
+      <button type="button" class="button secondary" data-dismiss="popin-block">Annuler</button>
+    </div>
+  </div>
+</div>
+<div class="popin-block large popin-adress-billing" id="popin-adress-billing_id" style="display: block">
+  <button class="button popin-close" data-dismiss="popin-block"><i class="icon-close"></i></button>
+  <div class="popin-content">
+    <h2 class="account-title mb30">Choisir une autre adresse de facturation</h2>
+
+    <hr class="divider m20">
+
+    <ul class="list-address list-address center justified clearfix">
+      <li>
+        <div class="block-address">
+          <div class="block-address--icon"><i class="icon-calculator"></i></div>
+          <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+          <div class="block-address--info">
+            <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+          </div>
+          <button type="button" class="button primary">Choisir cette adresse</button>
+        </div>
+      </li>
+      <li>
+        <div class="block-address">
+          <div class="block-address--icon"><i class="icon-calculator"></i></div>
+          <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
+          <div class="block-address--info">
+            <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
+          </div>
+          <button type="button" class="button primary">Choisir cette adresse</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="popin-footer popin-actions">
+    <div class="textcenter">
+      <button type="button" class="button secondary" data-dismiss="popin-block">Annuler</button>
+    </div>
+  </div>
 </div>
 <div class="overlay"></div>
 
