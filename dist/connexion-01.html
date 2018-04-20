@@ -1,0 +1,334 @@
+<!doctype html>
+<!--[if lt IE 10]><html class="ie9 lt-ie8" lang=""><![endif]-->
+<!--[if gt IE 10]><!--> <html lang="fr"> <!--<![endif]-->
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8"> 
+  <title>Connexion</title> 
+	<meta name="viewport" content="width=1070">
+	
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" />
+	<link rel="stylesheet" type="text/css" media="all" href="https://e-shopprocessedsteel.arcelormittal.com/sscstorefront/_ui/responsive/theme-ssc/css/style.css"/>
+	<link rel="stylesheet" type="text/css" media="all" href="https://e-shopprocessedsteel.arcelormittal.com/sscstorefront/_ui/responsive/theme-ssc/css/truck.css"/>
+	<link rel="stylesheet" type="text/css" media="all" href="https://e-shopprocessedsteel.arcelormittal.com/sscstorefront/_ui/responsive/theme-ssc/css/sscStyle.css"/>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+	<!--[if lt IE 9]>
+		<script src="assets/vendor/html5shiv/dist/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+<div class="branding-mobile hidden-md hidden-lg">
+	<div class="js-mobile-logo"><a href="/sscstorefront/fr/"><img title="Arcelor Mittal" alt="Arcelor Mittal" src="https://e-shopprocessedsteel.arcelormittal.com/sscstorefront/medias/logo.jpg?context=c3NjfGltYWdlc3w1NDUxfGltYWdlL2pwZWd8aW1hZ2VzL2gxZS9oMWMvODc5NjE4Mzg4NzkwMi5qcGd8NmE1MDIyOGVhMTNkM2EzY2RkMTE4OGUxMjc5ZjZhZjBlMWY4ZGE2ZWQ4MmIzODIyNGQyMmMxNGE0ZTY4NDQxOA"></a></div>
+</div>
+<header class="js-mainHeader">
+  <nav class="navigation navigation--top hidden-xs hidden-sm">
+    <div class="row">
+      <!-- 			<div class="col-sm-12 col-md-4"> -->
+      <!-- 				<div class="nav__left js-site-logo"> -->
+      <!-- 				</div> -->
+      <!-- 			</div> -->
+      <!-- 			<div class="col-sm-12 col-md-8"> -->
+      <!-- 				<div class="nav__right"> -->
+      <!-- 					<ul class="nav__links nav__links--account"> -->
+      <!-- 										value="/_s/ui-experience?level=" var="backToMobileStoreUrl" /> -->
+      <!-- 											code="text.backToMobileStore" /> -->
+      <!-- 									</a> -->
+      <!-- 								</li> -->
+      <!-- 								<li class="logged_in js-logged_in"> -->
+      <!-- 								</li> -->
+      <!-- 								<li class="liOffcanvas"> -->
+      <!-- 										</a> -->
+      <!-- 								</li> -->
+      <!-- 								<li class="liOffcanvas"> -->
+      <!-- 										</a> -->
+      <!-- 								</li> -->
+      <!-- 					</ul> -->
+      <!-- 				</div> -->
+      <!-- 			</div> -->
+    </div>
+  </nav>
+  <div class="hidden-xs hidden-sm js-secondaryNavAccount collapse" id="accNavComponentDesktopOne">
+    <ul class="nav__links">
+    </ul>
+  </div>
+  <div class="hidden-xs hidden-sm js-secondaryNavCompany collapse" id="accNavComponentDesktopTwo">
+    <ul class="nav__links js-nav__links">
+    </ul>
+  </div>
+  <nav class="navigation navigation--middle js-navigation--middle">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="mobile__nav__row mobile__nav__row--table">
+          <div class="mobile__nav__row--table-group">
+            <div class="mobile__nav__row--table-row">
+              <div class="mobile__nav__row--table-cell visible-xs hidden-sm">
+                <button class="mobile__nav__row--btn btn mobile__nav__row--btn-menu js-toggle-sm-navigation" type="button">
+                <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+              </div>
+              <div class="mobile__nav__row--table-cell visible-xs mobile__nav__row--seperator">
+                <button class="mobile__nav__row--btn btn mobile__nav__row--btn-search js-toggle-xs-search hidden-sm hidden-md hidden-lg" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </div>
+              <div class="mobile__nav__row--table-cell hidden-sm hidden-md hidden-lg mobile__nav__row--seperator">
+                <a href="/sscstorefront/fr/store-finder" class="mobile__nav__row--btn mobile__nav__row--btn-location btn">
+                <span class="glyphicon glyphicon-map-marker"></span>
+                </a>
+              </div>
+              <div class="yCmsContentSlot miniCartSlot componentContainer mobile__nav__row--table hidden-sm hidden-md hidden-lg">
+                <div class="yCmsComponent mobile__nav__row--table-cell">
+                  <div class="nav-cart">
+                    <a href="/sscstorefront/fr/cart" class="mini-cart-link js-mini-cart-link btn" data-mini-cart-url="/sscstorefront/fr/cart/rollover/MiniCart" data-mini-cart-refresh-url="/sscstorefront/fr/cart/miniCart/SUBTOTAL" data-mini-cart-name="Mon Panier " data-mini-cart-empty-name="Empty Cart" data-mini-cart-items-text="Articles">
+                      <!-- 		<div class="mini-cart-icon"> -->
+                      <!-- 			<span class="glyphicon glyphicon-shopping-cart "></span> -->
+                      <!-- 		</div> -->
+                      <span class="icons-truck truck-0" id="icons-truck"></span>
+                      <div class="mini-cart-price js-mini-cart-price hidden-xs hidden-sm">
+                        0,00 €
+                      </div>
+                      <div class="mini-cart-count"><span id="trunk_total" class="nav-items-total nb-truck">0</span></div>
+                      <span class="popin">
+                        <div class="messageTruck">
+                          <p class="alertTruck success " style="display: none;">Camion(s) rempli(s) et prêt à partir</p>
+                          <p class="alertTruck error " style="display: none;">Il faut ajouter du volume pour que le(s) camion(s) puissent partir</p>
+                          <div class="col-xs-6 text-left">
+                            Nombre de camion(s) :	
+                          </div>
+                          <div class="col-xs-6 text-right truckNbr">0</div>
+                          <div class="col-xs-6 text-left">
+                            Poids total : 
+                          </div>
+                          <div class=" col-xs-6 text-right commandWeight">0</div>
+                          <div class="col-xs-9 text-left truck_missing" style="display: none;">
+                            Poids manquant avant le remplissage du(des) camion(s) :
+                          </div>
+                          <div class="col-xs-3 text-right truck_missing missingWeight" style="display: none;">0</div>
+                          <div class="col-xs-9 text-left">
+                            Poids avant l'ajout d'un autre camion :
+                          </div>
+                          <div class="col-xs-3 text-right freeWeight">0</div>
+                        </div>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="mini-cart-container js-mini-cart-container"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row desktop__nav">
+        <div class="navigation navigation--top hidden-xs hidden-sm col-sm-12 col-md-2 mr-auto">
+          <div class="nav__left js-site-logo">
+            <div class="yCmsComponent yComponentWrapper">
+              <div class="banner__component banner">
+                <a href="/sscstorefront/fr/"><img title="Arcelor Mittal" alt="Arcelor Mittal" src="https://e-shopprocessedsteel.arcelormittal.com/sscstorefront/medias/logo.jpg?context=c3NjfGltYWdlc3w1NDUxfGltYWdlL2pwZWd8aW1hZ2VzL2gxZS9oMWMvODc5NjE4Mzg4NzkwMi5qcGd8NmE1MDIyOGVhMTNkM2EzY2RkMTE4OGUxMjc5ZjZhZjBlMWY4ZGE2ZWQ4MmIzODIyNGQyMmMxNGE0ZTY4NDQxOA"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--<div class="nav__left col-xs-12 col-sm-6 col-md-4">-->
+          <!--<div class="row">-->
+            <!--&lt;!&ndash; 						<div class="col-sm-2 hidden-xs visible-sm mobile-menu"> &ndash;&gt;-->
+            <!--&lt;!&ndash; 							<button class="btn js-toggle-sm-navigation" type="button"> &ndash;&gt;-->
+            <!--&lt;!&ndash; 								<span class="glyphicon glyphicon-align-justify"></span> &ndash;&gt;-->
+            <!--&lt;!&ndash; 							</button> &ndash;&gt;-->
+            <!--&lt;!&ndash; 						</div> &ndash;&gt;-->
+            <!--<div class="col-md-12 col-sm-10">-->
+              <!--<div class="site-search">-->
+                <!--<div class="yCmsComponent">-->
+                  <!--<div class="ui-front">-->
+                    <!--<form name="search_form_SearchBox" method="get" action="/sscstorefront/fr/search/">-->
+                      <!--<div class="input-group">-->
+                        <!--<input type="text" id="js-site-search-input" class="form-control js-site-search-input ui-autocomplete-input" name="text" value="" maxlength="100" placeholder="Rechercher" data-options="{&quot;autocompleteUrl&quot; : &quot;/sscstorefront/fr/search/autocomplete/SearchBox&quot;,&quot;minCharactersBeforeRequest&quot; : &quot;3&quot;,&quot;waitTimeBeforeRequest&quot; : &quot;500&quot;,&quot;displayProductImages&quot; : true}" autocomplete="off">-->
+                        <!--<span class="input-group-btn"> <button class="btn btn-link js_search_button" type="submit">-->
+                        <!--<span class="amds-icon-loupe"></span>-->
+                        <!--</button>-->
+                        <!--</span>-->
+                      <!--</div>-->
+                    <!--</form>-->
+                    <!--<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="nav__right hidden-xs col-xs-6 col-sm-6 col-md-5">-->
+          <!--<ul class="nav__links nav__links&#45;&#45;shop_info">-->
+            <!--<li>-->
+              <!--<div class="nav-location hidden-xs ssc-navigation&#45;&#45;middle">-->
+                <!--<div class="btn">-->
+                  <!--<span class="glyphicon glyphicon-map-marker"></span>										-->
+                  <!--<span class="truncate-text">La Roche-sur-Yon</span>-->
+                <!--</div>-->
+                <!--&lt;!&ndash; </a> &ndash;&gt;-->
+              <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+              <!--<div class="nav-location nav-truck hidden-xs">-->
+                <!--<a href="/sscstorefront/fr/login" class="btn">-->
+                	<!--<span class="glyphicon-map-marker amds-icon-login"></span>-->
+                	<!--<span class="truncate-text">Jean-Christophe</span>-->
+                <!--</a>-->
+              <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+              <!--<div class="yCmsContentSlot componentContainer">-->
+                <!--<div class="yCmsComponent">-->
+                  <!--<div class="nav-cart">-->
+                    <!--<a href="/sscstorefront/fr/cart" class="mini-cart-link js-mini-cart-link btn" data-mini-cart-url="/sscstorefront/fr/cart/rollover/MiniCart" data-mini-cart-refresh-url="/sscstorefront/fr/cart/miniCart/SUBTOTAL" data-mini-cart-name="Mon Panier " data-mini-cart-empty-name="Empty Cart" data-mini-cart-items-text="Articles">-->
+                      <!--&lt;!&ndash; 		<div class="mini-cart-icon"> &ndash;&gt;-->
+                      <!--&lt;!&ndash; 			<span class="glyphicon glyphicon-shopping-cart "></span> &ndash;&gt;-->
+                      <!--&lt;!&ndash; 		</div> &ndash;&gt;-->
+                      <!--<span class="icons-truck truck-0" id="icons-truck"></span>-->
+                      <!--<div class="mini-cart-price js-mini-cart-price hidden-xs hidden-sm">-->
+                        <!--0,00 €-->
+                      <!--</div>-->
+                      <!--<div class="mini-cart-count"><span id="trunk_total" class="nav-items-total nb-truck">0</span></div>-->
+                      <!--<span class="popin">-->
+                        <!--<div class="messageTruck">-->
+                          <!--<p class="alertTruck success " style="display: none;">Camion(s) rempli(s) et prêt à partir</p>-->
+                          <!--<p class="alertTruck error " style="display: none;">Il faut ajouter du volume pour que le(s) camion(s) puissent partir</p>-->
+                          <!--<div class="col-xs-6 text-left">-->
+                            <!--Nombre de camion(s) :	-->
+                          <!--</div>-->
+                          <!--<div class="col-xs-6 text-right truckNbr">0</div>-->
+                          <!--<div class="col-xs-6 text-left">-->
+                            <!--Poids total : -->
+                          <!--</div>-->
+                          <!--<div class=" col-xs-6 text-right commandWeight">0</div>-->
+                          <!--<div class="col-xs-9 text-left truck_missing" style="display: none;">-->
+                            <!--Poids manquant avant le remplissage du(des) camion(s) :-->
+                          <!--</div>-->
+                          <!--<div class="col-xs-3 text-right truck_missing missingWeight" style="display: none;">0</div>-->
+                          <!--<div class="col-xs-9 text-left">-->
+                            <!--Poids avant l'ajout d'un autre camion :-->
+                          <!--</div>-->
+                          <!--<div class="col-xs-3 text-right freeWeight">0</div>-->
+                        <!--</div>-->
+                      <!--</span>-->
+                    <!--</a>-->
+                  <!--</div>-->
+                  <!--<div class="mini-cart-container js-mini-cart-container"></div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+              <!--<div class="nav-location nav-lang">-->
+                <!--<form id="lang-form" action="/sscstorefront/fr/_s/language" method="post">-->
+                  <!--<div class="form-group">-->
+                    <!--<label class="control-label sr-only" for="lang-selector">Select Language</label>-->
+                    <!--<select name="code" id="lang-selector" class="form-control">-->
+                      <!--<option value="fr" selected="selected" lang="fr">fr</option>-->
+                      <!--<option value="en" lang="en">-->
+                        <!--en-->
+                      <!--</option>-->
+                    <!--</select>-->
+                  <!--</div>-->
+                  <!--<div>-->
+                    <!--<input type="hidden" name="CSRFToken" value="f89c25c1-52cc-4e8e-9b75-59dd47e01457">-->
+                  <!--</div>-->
+                <!--</form>-->
+              <!--</div>-->
+            <!--</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+      </div>
+    </div>
+  </nav>
+  <a id="skiptonavigation"></a>
+  <!--
+  <nav class="navigation navigation--bottom js_navigation--bottom js-enquire-offcanvas-navigation" role="navigation">
+    <ul class="sticky-nav-top hidden-lg hidden-md js-sticky-user-group hidden-md hidden-lg">
+      <div class="close-nav"><button type="button" class="js-toggle-sm-navigation btn"><span class="glyphicon glyphicon-remove"></span></button></div>
+    </ul>
+    <div class="navigation__overflow">
+      <ul data-trigger="#signedInUserOptionsToggle" class="nav__links nav__links--products nav__links--mobile js-userAccount-Links js-nav-collapse-body offcanvasGroup1 collapse in hidden-md hidden-lg">
+      </ul>
+      <ul class="nav__links nav__links--products js-offcanvas-links">
+        <li navigationtype="offcanvas" class="yCmsComponent nav__links--primary"></li>
+        <li class=" auto nav__links--primary ">
+          <span class="yCmsComponent nav__link js_nav__link">
+          <a href="/sscstorefront/fr/T%C3%B4le/Noire/c/11102131001860" title="Tôle Noire">Tôle Noire</a></span>
+        </li>
+        <li navigationtype="offcanvas" class="yCmsComponent nav__links--primary"></li>
+        <li class=" auto nav__links--primary ">
+          <span class="yCmsComponent nav__link js_nav__link">
+          <a href="/sscstorefront/fr/T%C3%B4le/D%C3%A9cap%C3%A9e/c/11102131001920" title="Tôle Décapée">Tôle Décapée</a></span>
+        </li>
+        <li navigationtype="offcanvas" class="yCmsComponent nav__links--primary"></li>
+        <li class=" auto nav__links--primary ">
+          <span class="yCmsComponent nav__link js_nav__link">
+          <a href="/sscstorefront/fr/T%C3%B4le/Larm%C3%A9e/c/11102131001890" title="Tôle Larmée">Tôle Larmée</a></span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+-->
+</header>
+
+<!--.page-account-->
+<div class="main loginPage amds-bg container" role="main">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+      <div class="yCmsContentSlot login-left-content-slot active-side">
+        <div class="yCmsComponent login-left-content-component">
+          <div class="login-section">
+            <div class="login-page__headline">
+              Connexion</div>
+
+            <p>
+            </p>
+            <form id="loginForm" action="/fr/j_spring_security_check" method="post"><div class="form-group">
+              <label class="control-label " for="j_username">
+                Login</label>
+
+              <input id="j_username" name="j_username" class=" form-control" placeholder="Adresse mail" type="text" value=""></div>
+              <div class="form-group">
+                <label class="control-label " for="j_password">
+                </label>
+
+                <input id="j_password" name="j_password" class="form-control" placeholder="Mot de passe" type="password" value="" autocomplete="off"></div>
+              <div class="amds-checkbox">
+                <input type="checkbox" name="remember-me" id="_spring_security_remember_me">
+                <label for="_spring_security_remember_me">
+                  <div class="inputCheckbox"></div>
+                  Se souvenir de mes identifiants</label>
+                <div class="amds-form-field__errormsg">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Je me connecte</button>
+              <div class="forgotten-password">
+                <a href="#" data-link="/fr/login/pw/request" class="js-password-forgotten" data-cbox-title="Changement de mot de passe">
+                  J'ai oublié mon mot de passe</a>
+              </div>
+              <div>
+                <input type="hidden" name="CSRFToken" value="77c8d328-fe4f-4335-92a6-6ca9cc8628dd">
+              </div></form></div>
+        </div></div></div>
+  </div>
+</div><!--//END main -->
+<!--/.page-account-->
+
+<footer class="footer" role="contentinfo">
+		
+	<div class="container">
+		<p>Footer</p>
+	</div>
+</footer><!--//END footer -->
+
+<script type="text/javascript" src="assets/vendor/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="assets/vendor/matchHeight/dist/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+</html>
