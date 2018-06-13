@@ -1,0 +1,143 @@
+/*-----------------------------------------------------------------------------------------------------
+    [popin]
+-------------------------------------------------------------------------------------------------------*/
+.popin-block-overlay {
+  display    : none;
+  background : rgba(0, 0, 0, 0.8);
+  position   : fixed;
+  z-index    : 90;
+  top        : 0;
+  right      : 0;
+  bottom     : 0;
+  left       : 0;
+  max-height : 100vh;
+  overflow   : auto;
+
+  &--inner {
+    position : relative;
+    width    : 100%;
+    height   : auto;
+    overflow : auto;
+    }
+  }
+
+.popin-block {
+  width              : 550px;
+  max-height         : 100%;
+  overflow           : hidden;
+  background         : #FFF;
+  position           : relative;
+  //transform  : translateY(-50%);
+  margin             : 40px auto 0;
+  z-index            : 99;
+  -webkit-transition : all 300ms ease-in-out;
+  -moz-transition    : all 300ms ease-in-out;
+  -ms-transition     : all 300ms ease-in-out;
+  -o-transition      : all 300ms ease-in-out;
+  transition         : all 300ms ease-in-out;
+
+  @media screen and (max-width : 600px) {
+    width : auto;
+    }
+  &.small {
+    max-width : 400px;
+    }
+  &.medium {
+    max-width : 900px;
+    }
+  &.large {
+    width     : 1074px;
+    max-width : 1200px;
+    }
+  &.fullscreen {
+    height    : 100%;
+    max-width : none;
+    }
+  .popin-close {
+    position : absolute;
+    top      : 6px;
+    right    : 10px;
+    width    : 55px;
+    height   : 55px;
+    padding  : 0;
+    [class*="icon-"] {
+      pointer-events : none;
+      font-size      : 18px;
+      position       : relative;
+      top            : 0;
+      color          : $primary;
+      }
+
+    &:hover,
+    &:focus {
+      //background-color : $primary;
+      //[class*="icon-"] {
+      //  color : white;
+      //  }
+      }
+    }
+  .popin-content {
+    overflow : hidden;
+    width    : auto;
+    padding  : 40px;
+    }
+  .popin-footer {
+    padding : 20px 20px 40px 20px;
+    &.popin-actions {
+      .button {
+        width  : 200px;
+        margin : 0 20px;
+        }
+      }
+    }
+
+  form {
+    padding: 0;
+    max-width: 100%;
+    }
+
+  // CART
+  &.popin-cart {
+    text-align : center;
+    .popin-content { }
+    .list-truck {
+      text-align       : center;
+      margin           : 15px 0 10px 0;
+      display          : block;
+      background-color : #FFF;
+      padding          : 0 15px;
+      li {
+        display : inline-block;
+        margin  : 0 10px;
+        }
+      }
+    }
+  }
+
+.sticked .popin-block {
+  margin-top : 0 !important;
+  }
+
+.popin-cart {
+  margin-top: 100px;
+  }
+
+.popin-adress-delivery .popin-content {
+  padding-top    : 30px;
+  padding-bottom : 15px;
+  }
+
+.popin-adress-billing .popin-content {
+  padding-top    : 30px;
+  padding-bottom : 0px;
+  }
+
+.popin-adress-billing .popin-footer {
+  padding-top : 5px;
+  }
+
+
+
+
+
+

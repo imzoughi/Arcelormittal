@@ -1,0 +1,64 @@
+<!doctype html>
+<!--[if lt IE 10]><html class="ie9 lt-ie8" lang=""><![endif]-->
+<!--[if gt IE 10]><!--> <html lang="fr"> <!--<![endif]-->
+<head>
+  <!-- @@include includes/head.html {"title": "Connexion"} -->
+</head>
+<body>
+
+
+<!-- @@include includes/header-connexion.html -->
+
+<!--.page-account-->
+<div class="main loginPage amds-bg container" role="main">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+      <div class="yCmsContentSlot login-left-content-slot active-side">
+        <div class="yCmsComponent login-left-content-component">
+          <div class="login-section">
+            <div class="login-page__headline">
+              Connexion</div>
+
+            <p>
+            </p>
+            <form id="loginForm" action="/fr/j_spring_security_check" method="post"><div class="form-group">
+              <label class="control-label " for="j_username">
+                Login</label>
+
+              <input id="j_username" name="j_username" class=" form-control" placeholder="Adresse mail" type="text" value=""></div>
+              <div class="form-group">
+                <label class="control-label " for="j_password">
+                </label>
+
+                <input id="j_password" name="j_password" class="form-control" placeholder="Mot de passe" type="password" value="" autocomplete="off"></div>
+              <div class="amds-checkbox">
+                <input type="checkbox" name="remember-me" id="_spring_security_remember_me">
+                <label for="_spring_security_remember_me">
+                  <div class="inputCheckbox"></div>
+                  Se souvenir de mes identifiants</label>
+                <div class="amds-form-field__errormsg">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Je me connecte</button>
+              <div class="forgotten-password">
+                <a href="#" data-link="/fr/login/pw/request" class="js-password-forgotten" data-cbox-title="Changement de mot de passe">
+                  J'ai oublié mon mot de passe</a>
+              </div>
+              <div>
+                <input type="hidden" name="CSRFToken" value="77c8d328-fe4f-4335-92a6-6ca9cc8628dd">
+              </div></form></div>
+        </div></div></div>
+  </div>
+</div><!--//END main -->
+<!--/.page-account-->
+
+<footer class="footer" role="contentinfo">
+  <!-- @@include includes/footer.html -->
+</footer><!--//END footer -->
+
+<!-- @@include includes/scripts.html -->
+
+</body>
+</html>

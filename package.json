@@ -1,0 +1,40 @@
+{
+  "name": "rayures-framework",
+  "version": "0.0.1",
+  "description": "A simple html/scss framework powered by Gulp for my projects",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrRayures/rayures-framework.git"
+  },
+  "author": "MrRayures aka François Leproust",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrRayures/rayures-framework/issues"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-cssbeautify": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-html-extend": "latest",
+    "gulp-iconfont": "latest",
+    "gulp-iconfont-css": "latest",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-real-favicon": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "latest",
+    "panini": "latest"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^4.1.0",
+    "gulp-live-serve": "^1.0.2"
+  }
+}

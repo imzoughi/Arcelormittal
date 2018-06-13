@@ -1,0 +1,26 @@
+/*-----------------------------------------------------------------------------------------------------
+    [list-address]
+-------------------------------------------------------------------------------------------------------*/
+
+.list-address {
+  margin : 30px 0 0 0;
+  &.center {
+    text-align : center;
+    }
+  &.justified {
+    margin-left  : -2.533%;
+    margin-right : -2.533%;
+    }
+  li {
+    display        : inline-block;
+    vertical-align : top;
+    width          : 28%;
+    margin         : 0 2.533% 35px 2.533%;
+    }
+  + .list-actions {
+    margin-top : 0px;
+    }
+  + .divider {
+    margin-top : 0px;
+    }
+  }

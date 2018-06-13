@@ -1,0 +1,34 @@
+/*-----------------------------------------------------------------------------------------------------
+    [login]
+-------------------------------------------------------------------------------------------------------*/
+.loginPage {
+  padding : 80px 0 130px;
+  }
+
+.loginPage .login-left-content-slot .login-page__headline, .loginPage .login-right-content-slot .login-page__headline, .loginPage .login-left-content-slot .user-register__headline, .loginPage .login-right-content-slot .user-register__headline {
+  color       : #696969;
+  font-size   : 25px;
+  line-height : 35px;
+  font-weight : normal;
+  padding     : 35px 0 30px;
+  margin      : 0;
+  }
+
+.loginPage .forgotten-password {
+  margin-bottom : 40px;
+  }
+.loginPage .login-left-content-slot .form-group .form-control,
+.loginPage .login-right-content-slot .form-group .form-control {
+  padding: 0 20px;
+  }
+.loginPage .login-left-content-slot.active-side .form-group .form-control::-webkit-input-placeholder,
+.loginPage .login-right-content-slot.active-side .form-group .form-control::-webkit-input-placeholder {
+  color : #B0B1B5;
+  }
+
+.branding-mobile .js-mobile-logo {
+  display: block;
+  margin: 0 auto;
+  float: none;
+  width: 155px;
+  }

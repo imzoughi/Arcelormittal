@@ -1,0 +1,54 @@
+/*-----------------------------------------------------------------------------------------------------
+    [account-bar]
+-------------------------------------------------------------------------------------------------------*/
+
+.account-bar {
+	color: #FFF;
+	margin-bottom: 30px;
+	.account-bar--content {
+		background-color: #B0B1B5;
+		padding: 26px 25px 22px 40px;
+	}
+}
+.account-bar--infos {
+	float: left;
+	position: relative;
+	padding-left: 70px;
+	font-size: 15px;
+	a {
+		color: #FFF;
+		font-size: 15px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.separator {
+		display: inline-block;
+		margin: 0 20px;
+	}
+	[class*="icon-"] {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 35px;
+	}
+}
+.account-bar--link {
+	float: right;
+	li {
+		margin-left: 35px;
+		display: inline-block;
+		&:first-child {
+			margin-left: 0;
+		}
+		a {
+			color: #FFF;
+			font-size: 15px;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+

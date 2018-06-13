@@ -1,0 +1,74 @@
+/*-----------------------------------------------------------------------------------------------------
+    [form-search-address]
+-------------------------------------------------------------------------------------------------------*/
+
+.search-address {
+  padding-right: 60px;
+  position: relative;
+  .control-group {
+    .control-label {
+      float: left;
+      width: 40%;
+      font-size: 20px;
+      padding-top: 11px;
+      padding-right: 30px;
+      text-transform: none;
+      font-weight: normal;
+    }
+    .control-input {
+      float: left;
+      width: 29%;
+      + .control-input {
+        margin-left: 2%;
+      }
+    }
+  }
+  .control-submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    [class*="icon-"] {
+      top: 55%;
+      font-size: 25px;
+    }
+  }
+
+  &.single {
+    padding-right: 0;
+    .control-group .control-label {
+      width: 30%;
+      &.small {
+        width: 12%;
+        }
+      }
+    .control-group .control-input {
+      width: 35%;
+      }
+    }
+}
+
+.control-group .control-input + .control-submit {
+  display: inline-block;
+  position: relative;
+  left: 2%;
+  }
+
+.search-address--result {
+  margin: 65px 0;
+  text-align: center;
+  font-size: 20px;
+  color: $primary;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

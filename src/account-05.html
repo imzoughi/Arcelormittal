@@ -1,0 +1,377 @@
+<!doctype html>
+<!--[if lt IE 10]><html class="ie9 lt-ie8" lang=""><![endif]-->
+<!--[if gt IE 10]><!--> <html lang="fr"> <!--<![endif]-->
+  <head>
+    <!-- @@include includes/head.html {"title": "Mon compte : popin"} -->
+  </head>
+  <body>
+    
+
+    <!-- @@include includes/header.html -->
+
+
+    <div class="account-bar clearfix">
+      <div class="account-bar--content container clearfix">
+        <div class="account-bar--infos">
+          <p><i class="icon-user"></i> Bonjour Walter <span class="separator">|</span> <a href="#">Client facturé : Gebruder Lotter KG</a></p>
+        </div>
+        <ul class="account-bar--link">
+          <li><a href="#">Modifier mon mot de passe</a></li>
+          <li><a href="#">Déconnexion</a></li>
+        </ul>
+      </div>
+    </div>
+      
+    <div class="main page-account container" role="main">
+      
+      <h2 class="account-title">Ma commande en cours</h2>
+
+      <div class="order-pending clearfix">
+        <p class="order-pending--alert">Il faut ajouter du volume pour que le(s) camion(s) puissent partir</p>
+        <div class="order-pending--block order-pending--address-shipping">
+          <div class="order-pending--title">
+            <i class="icon-location"></i>
+            <p>Adresse d'expédition</p>
+          </div>
+          <div class="block-address">
+            <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+            <div class="block-address--info">
+              <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-pending--block order-pending--truck-filling">
+          <ul class="list-truck">
+            <li>
+              <div class="block-truck truck" id="">
+                <img class="block-truck--img" src="assets/img/truck.svg" alt="Camion non rempli">
+                <span class="block-truck--weight-bar weight-bar">
+                  <span class="progress" style="width: 80%;"></span>
+                  <span class="progress-min" >min 20t</span>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div class="block-truck truck truck-filled" id="">
+                <img class="block-truck--img" src="assets/img/truck.svg" alt="Camion rempli">
+                <span class="block-truck--weight-bar weight-bar">
+                  <span class="progress" style="width: 100%;"></span>
+                  <span class="progress-min" >2</span>
+                </span>
+              </div>
+            </li>
+          </ul>
+          <p><u>Stock vérifié le 21/03/17 à 16h15</u></p>
+          <p>3 camion</p>
+          <p>Poids total = 58 tonnes</p>
+          <p class="warning">Poids manquant  = 2 tonnes</p>
+          <p>Poids avant l'ajout d'un autre camion = 10 tonnes</p>
+          <a class="button primary" href="#" data-toggle="popin-block" data-target="#popin-cart_id">Voir mon panier</a>
+        </div>
+        <div class="order-pending--block order-pending--address-delivery">
+          <div class="order-pending--title">
+            <i class="icon-location-stroke"></i>
+            <p>Adresse de livraison</p>
+          </div>
+          <div class="block-address select">
+            <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+            <div class="block-address--info">
+              <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+            </div>
+            <div class="custom-select">
+              <select name="" id="">
+                <option value="">Choisir une autre adresse</option>
+                <option value="">Adresse 1</option>
+                <option value="">Adresse 2</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      
+
+      <hr class="divider">
+      
+      <h2 class="account-title">Mes adresses de livraison <span>(7)</span></h2>
+      
+      <ul class="list-address clearfix">
+        <li>
+          <div class="block-address">
+            <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+            <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+            <div class="block-address--info">
+              <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+            </div>
+            <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+          </div>
+        </li>
+        <li>
+          <div class="block-address">
+            <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+            <h3 class="block-address--title">GEBRUDER LOTTER KG</h3>
+            <div class="block-address--info">
+              <p>Raiffeisenstrasse <br> BLECHLAGER LUDWIGSBURG <br>  71636 LUDWIGSBURG</p>
+            </div>
+           <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+          </div>
+        </li>
+        <li>
+          <div class="block-address">
+            <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+            <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
+            <div class="block-address--info">
+              <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
+            </div>
+           <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+          </div>
+        </li>
+      </ul>
+      
+      <div class="textcenter list-actions">
+        <a href="#">+ Afficher toutes mes adresses</a>
+      </div>
+
+      <hr class="divider">
+
+      <form action="">
+        <div class="form-content search-address clearfix">
+          <div class="control-group clearfix">
+            <label class="control-label" for="">Rechercher une autre adresse</label>
+            <div class="control-input">
+              <input type="text" placeholder="ville">
+            </div>
+            <div class="control-input">
+              <input type="text" placeholder="nom du client" value="AMD Solutions">
+            </div>
+          </div>
+          <div class="control-submit">
+            <button type="button" class="button primary icon-only"><i class="icon-search"></i></button>
+          </div>
+          <p class="search-address--result">Vous avez 5 résultats pour "AMD Solutions"</p>
+        </div>
+      </form>
+
+      
+
+      <ul class="list-address clearfix">
+        <li>
+          <div class="block-address">
+            <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+            <h3 class="block-address--title">AMD SOLUTIONS FRANCE</h3>
+            <div class="block-address--info">
+              <p>1 rue de l'industrie <br> 57971 YUTZ CEDEX</p>
+            </div>
+           <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+          </div>
+        </li>
+        <li>
+          <div class="block-address">
+            <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+            <h3 class="block-address--title">GEBRUDER LOTTER KG</h3>
+            <div class="block-address--info">
+              <p>Raiffeisenstrasse <br> BLECHLAGER LUDWIGSBURG <br>  71636 LUDWIGSBURG</p>
+            </div>
+           <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+          </div>
+        </li>
+        <li>
+          <div class="block-address">
+            <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+            <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
+            <div class="block-address--info">
+              <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
+            </div>
+           <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+          </div>
+        </li>
+        <li>
+          <div class="block-address">
+            <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+            <h3 class="block-address--title">GEBRUDER LOTTER KG</h3>
+            <div class="block-address--info">
+              <p>Raiffeisenstrasse <br> BLECHLAGER LUDWIGSBURG <br>  71636 LUDWIGSBURG</p>
+            </div>
+           <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+          </div>
+        </li>
+        <li>
+          <div class="block-address">
+            <div class="block-address--icon"><i class="icon-location-stroke"></i></div>
+            <h3 class="block-address--title">NV DISTEEL site Wondelgem</h3>
+            <div class="block-address--info">
+              <p>Industrieweg 106-108 <br> 9032 WONDELGEM</p>
+            </div>
+           <button type="button" class="button primary icon-right">Créer un panier <i class="icon-truck"></i></button>
+          </div>
+        </li>
+      </ul>
+      
+      <hr class="divider">
+
+      <h2 class="account-title">Mon historique de commandes <span>(18)</span></h2>
+      <table class="table order-history">
+        <thead>
+          <tr>
+            <th class="first">N° commande</th>
+            <th>Expédition</th>
+            <th>Adresse de livraison</th>
+            <th class="col-total">Total de la commande</th>
+            <th></th>
+          </tr>
+        </head>
+        <tbody>
+          <tr>
+            <td class="first">
+              N° 15202 <br>
+              21/02/2017
+            </td>
+            <td class="">
+              <strong>ArcelorMittal Porta </strong><br>
+              400, Avenue Paul Pastur <br>6200 BOUFFIOULX
+            </td>
+            <td class="">
+              <strong>AMD Solutions France </strong><br>
+              1 rue de l'industrie <br>
+              57971 YUTZ CEDEX
+            </td>
+            <td class="col-total">
+              <div class="truck-filling">
+                <div class="truck">
+                  <span>3</span>
+                  <img src="assets/img/truck-order-filled.svg" alt="Camion rempli">
+                </div>
+                <a href="#">voir le détail</a>
+              </div>
+              <div class="total-info">
+                <p><strong>51 000,59 € HT</strong><br>  
+                4 articles <br>
+                62 tonnes</p>
+              </div>
+            </td>
+            <td class="last">
+              <button type="button" class="button primary icon-right small">Recommander<i class="icon-arrow-right-alt"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td class="first">
+              N° 15203 <br>
+              21/02/2017
+            </td>
+            <td class="">
+              <strong>ArcelorMittal Porta </strong><br>
+              400, Avenue Paul Pastur <br>6200 BOUFFIOULX
+            </td>
+            <td class="">
+              <strong>ArcelorMittal STAHLHAN... </strong><br>
+              Gereonstr. 58  <br>  
+              50670 KOELN
+            </td>
+            <td class="col-total">
+              <div class="truck-filling">
+                <div class="truck">
+                  <span>3</span>
+                  <img src="assets/img/truck-order-filled.svg" alt="Camion rempli">
+                </div>
+                <a href="#">voir le détail</a>
+              </div>
+              <div class="total-info">
+                <p><strong>18 200,59 € HT</strong><br>  
+                4 articles <br>
+                62 tonnes</p>
+              </div>
+            </td>
+            <td class="last">
+              <button type="button" class="button primary icon-right small">Recommander<i class="icon-arrow-right-alt"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td class="first">
+              N° 15204 <br>
+              21/02/2017
+            </td>
+            <td class="">
+              <strong>ArcelorMittal Porta </strong><br>
+              400, Avenue Paul Pastur <br>6200 BOUFFIOULX
+            </td>
+            <td class="">
+              <strong>GEBRUDER LOTTER KG  </strong><br>
+              Raiffeisenstrasse <br>
+              BLECHLAGER LUDWIGSBURG   <br>
+              71636 LUDWIGSBURG <br>
+            </td>
+            <td class="col-total">
+              <div class="truck-filling">
+                <div class="truck">
+                  <span>3</span>
+                  <img src="assets/img/truck-order-filled.svg" alt="Camion rempli">
+                </div>
+                <a href="#">voir le détail</a>
+              </div>
+              <div class="total-info">
+                <p><strong>5 001,01 € HT</strong><br>  
+                4 articles <br>
+                62 tonnes</p>
+              </div>
+            </td>
+            <td class="last">
+              <button type="button" class="button primary icon-right small">Recommander<i class="icon-arrow-right-alt"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="textcenter">
+        <a href="#">+ Afficher plus de commandes</a>
+      </div>
+    </div><!--//END main -->
+
+
+    <footer class="footer" role="contentinfo">
+      <!-- @@include includes/footer.html -->
+    </footer><!--//END footer -->
+
+
+    <div class="popin-block-overlay" id="popin-cart_id" style="display: block">
+      <div class="popin-block-overlay--inner">
+        <div class="popin-block popin-cart">
+          <button class="button popin-close" data-dismiss="popin-block"><i class="icon-close"></i></button>
+          <div class="popin-content">
+            <ul class="list-truck">
+              <li>
+                <div class="block-truck truck" id="">
+                  <img class="block-truck--img" src="assets/img/truck.svg" alt="Camion non rempli">
+              <span class="block-truck--weight-bar weight-bar">
+                <span class="progress" style="width: 80%;"></span>
+                <span class="progress-min" >min 20t</span>
+              </span>
+                </div>
+              </li>
+              <li>
+                <div class="block-truck truck truck-filled" id="">
+                  <img class="block-truck--img" src="assets/img/truck.svg" alt="Camion rempli">
+              <span class="block-truck--weight-bar weight-bar">
+                <span class="progress" style="width: 100%;"></span>
+                <span class="progress-min" >2</span>
+              </span>
+                </div>
+              </li>
+            </ul>
+            <p>Etes-vous sûr de vouloir supprimer votre panier en cours ?</p>
+          </div>
+          <div class="popin-footer popin-actions">
+            <div class="textcenter">
+              <button type="button" class="button secondary">Garder</button>
+              <button type="button" class="button primary">Supprimer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- @@include includes/scripts.html -->
+
+  </body>
+</html>
