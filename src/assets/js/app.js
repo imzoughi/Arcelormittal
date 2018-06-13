@@ -24,7 +24,7 @@ var blockAddressHeight = function () {
 
 /* ========================================== *\
  *  MODULE POPINBLOCK
- \* ========================================== */
+\* ========================================== */
 var popinBlock = function () {
     var body = $('body');
     var popins = $('.popin-block-overlay');
